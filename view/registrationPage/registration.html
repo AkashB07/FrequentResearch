@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./registration.css"/>
+</head>
+<body>
+    <div class="container">
+        
+        <form class="login" id="login" onsubmit="return validate(event)" >
+            <h1 class="logintitle">Enter Your Details</h1><br>
+
+            
+            <label for="fname"><strong>First Name</strong></label>
+            <input id="fname" type="text" name="fname" required><br>
+
+            <label for="lname"><strong>Last Name</strong></label>
+            <input id="lname" type="text" name="lname" required><br>
+
+            <label for="email"><strong>Email</strong></label>
+            <input id="email" type="email" name="email" required><br>
+
+            <label for="country"><strong>Country</strong></label>
+            <select id="country" name="country" required>
+                <option>Choose</option>
+            </select><br>
+
+            <label for="state"><strong>State</strong></label>
+            <select id="state" name="state"required>
+                <option>Choose</option>
+            </select><br>
+
+            <label for="city"><strong>City</strong></label>
+            <select id="city" name="city"required>
+                <option>Choose</option>
+            </select><br>
+        
+
+            <label><strong>Gender</strong></label>
+            <span> <input type="radio" value="Male" name="gender" required>Male
+                <input type="radio" value="Female" name="gender"required>Female
+                <input type="radio" value="Others" name="gender"required>Others
+            </span><br>
+
+            <label for="dob"><strong>Date of Birth</strong></label>
+            <input type="date" id="dob" name="dob"required><br>
+           
+
+            <button class="submitbtn" ><strong>Submit</strong></button><br>
+           
+        </form>
+       
+    </div>
+    <script src="./registration.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.2.0/axios.min.js"></script>
+    
+</body>
+</html>

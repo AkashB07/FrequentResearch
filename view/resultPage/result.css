@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+  }
+  
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  h1.label{
+    color: rgba(68, 39, 16, 0.791);
+  }
+
+  h1.res{
+    color: rgba(21, 68, 65, 0.791);
+  }
+  
+  .container {
+    width: 30%;
+    border-radius: 15px;
+  }

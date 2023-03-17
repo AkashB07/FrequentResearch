@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>State</title>
+  </head>
+  <body>
+    <div>
+      <form method="post" onsubmit="astate(event)">
+        <table>
+          <tr>
+            <td><label>Select Country</label></td>
+            <td>
+              <select id="country" name="country">
+                <option>Choose</option>
+              </select>
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td><label for="state">State Name</label></td>
+            <td><input id="state" name="state" type="text" /></td>
+            <td><button>Add state</button></td>
+          </tr>
+        </table>
+
+        <a href="./addcountry.html">Add Country</a><br />
+        <a href="./addstate.html">Add State</a><br />
+        <a href="./addcity.html">Add City</a><br />
+      </form>
+    </div>
+
+    <script src="./addstate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.2.0/axios.min.js"></script>
+  </body>
+</html>
